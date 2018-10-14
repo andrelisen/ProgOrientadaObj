@@ -20,8 +20,29 @@ public class Exercicio5 {
         // TODO code application logic here
         Scanner in = new Scanner(System.in);
         String str;
+        int numeroCaracteres = 0, posicao = 0;
+        char c;
         System.out.println("Digite uma palavra ");
         str = in.nextLine();
+        numeroCaracteres = str.length(); 
+        for (int i=0; i<numeroCaracteres; i++) {
+            c = str.charAt(i); // i-ésimo caractere da string 's'
+            if(Character.isLetter(c))
+            {
+                System.out.println("É uma letra :"+c);
+            }
+            else{
+                System.out.println("Não é uma letra:"+c);
+            }
+                    if(Character.isUpperCase(c))
+                    {
+                    System.out.println("É maiúsculo:"+c);
+                    }
+                    else{
+                    System.out.println("Não é maiúscula:"+c);
+                    }
+           
     }
     
+}
 }
