@@ -30,7 +30,7 @@ public class Exercicio1 {
            {
                System.err.println("ERRO DE DIVISÃO:"+ e);
                System.out.println(e.getMessage());
-               System.out.println(e.printStackTrace();//Perguntar o motivo de dar esse erro               
+               e.printStackTrace();               
            }
     }
     
