@@ -172,14 +172,11 @@ public class biblioteca extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAdicionarActionPerformed
 
     private void btnListarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListarActionPerformed
-       // DefaultListModel listModel = new DefaultListModel();
-        //    for (String percorrer : suaLista) {
-         //      listModel.addElement(percorrer);
-          //  }
-         //   jList.setModel(listModel);
+        //Para poder fazer a impressão de um ARRAYLIST em um componente gráfico
+        //do tipo JLIST
+        //Somente utilizando os componentes como está definido a baixo
             DefaultListModel listModel = new DefaultListModel();
-        //   int i = conteudo.size();
-       //    int x=0;
+
             for(String percorrer : conteudo )
             {
                 listModel.addElement(percorrer);
